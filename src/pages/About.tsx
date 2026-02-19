@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImg from "@/assets/hero-gym.jpg";
 import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
 import PageTransition from "@/components/layout/PageTransition";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -34,13 +35,13 @@ const About = () => {
               More Than <br /><span className="text-gradient">A Gym</span>
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Iron Pulse Fitness was born from a belief that fitness should be an experience — not just a routine. 
-              We combine cutting-edge equipment, expert trainers, and an electric atmosphere to create 
+              Iron Pulse Fitness was born from a belief that fitness should be an experience — not just a routine.
+              We combine cutting-edge equipment, expert trainers, and an electric atmosphere to create
               a space where champions are forged.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Since 2015, we've helped over 5,000 members transform their bodies and minds. 
-              Our approach is simple: provide world-class facilities, hire the best trainers, 
+              Since 2015, we've helped over 5,000 members transform their bodies and minds.
+              Our approach is simple: provide world-class facilities, hire the best trainers,
               and build a community that pushes each other to be extraordinary.
             </p>
           </motion.div>
@@ -51,9 +52,11 @@ const About = () => {
             className="relative"
           >
             <div className="aspect-[4/5] rounded-2xl bg-secondary overflow-hidden glow-border">
-              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center">
-                <span className="text-8xl font-black text-primary/10">IP</span>
-              </div>
+              <img
+                src={heroImg}
+                alt="Iron Pulse Gym Interior"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-primary rounded-xl p-6 text-primary-foreground">
               <div className="text-3xl font-black">10+</div>
