@@ -6,12 +6,54 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { Instagram, Twitter, X } from "lucide-react";
 
 const trainers = [
-  { name: "Vikram Rathore", role: "Head Trainer / Strength", experience: "12 years", speciality: "Powerlifting, Olympic Lifting", bio: "Former national powerlifting champion with a passion for transforming beginners into competitors." },
-  { name: "Meera Kapoor", role: "Yoga & Wellness", experience: "8 years", speciality: "Vinyasa, Recovery", bio: "Certified yoga therapist who believes in the powerful connection between mind and body." },
-  { name: "Arjun Das", role: "CrossFit Coach", experience: "10 years", speciality: "CrossFit, HIIT", bio: "Level 3 CrossFit certified coach who has trained multiple regional competitors." },
-  { name: "Neha Gupta", role: "Nutrition & Cardio", experience: "6 years", speciality: "Nutrition, Endurance", bio: "Registered dietitian and marathon runner combining science-based nutrition with cardiovascular training." },
-  { name: "Rohan Mehta", role: "Boxing & MMA", experience: "9 years", speciality: "Boxing, Kickboxing", bio: "Former amateur boxing champion bringing combat sports training to fitness enthusiasts." },
-  { name: "Kavya Sharma", role: "Group Fitness", experience: "7 years", speciality: "Zumba, Aerobics", bio: "Energetic instructor who turns every session into a celebration of movement and music." },
+  {
+    name: "Vikram Rathore",
+    role: "Head Trainer / Strength",
+    experience: "12 years",
+    speciality: "Powerlifting, Olympic Lifting",
+    bio: "Former national powerlifting champion with a passion for transforming beginners into competitors.",
+    image: "https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Meera Kapoor",
+    role: "Yoga & Wellness",
+    experience: "8 years",
+    speciality: "Vinyasa, Recovery",
+    bio: "Certified yoga therapist who believes in the powerful connection between mind and body.",
+    image: "https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Arjun Das",
+    role: "CrossFit Coach",
+    experience: "10 years",
+    speciality: "CrossFit, HIIT",
+    bio: "Level 3 CrossFit certified coach who has trained multiple regional competitors.",
+    image: "https://images.unsplash.com/photo-1534367507873-ee2f79ec1896?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Neha Gupta",
+    role: "Nutrition & Cardio",
+    experience: "6 years",
+    speciality: "Nutrition, Endurance",
+    bio: "Registered dietitian and marathon runner combining science-based nutrition with cardiovascular training.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Rohan Mehta",
+    role: "Boxing & MMA",
+    experience: "9 years",
+    speciality: "Boxing, Kickboxing",
+    bio: "Former amateur boxing champion bringing combat sports training to fitness enthusiasts.",
+    image: "https://images.unsplash.com/photo-1549476464-37392f717551?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    name: "Kavya Sharma",
+    role: "Group Fitness",
+    experience: "7 years",
+    speciality: "Zumba, Aerobics",
+    bio: "Energetic instructor who turns every session into a celebration of movement and music.",
+    image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=800&auto=format&fit=crop"
+  },
 ];
 
 const Trainers = () => {
@@ -39,10 +81,12 @@ const Trainers = () => {
                 className="group cursor-pointer"
               >
                 <div className="relative overflow-hidden rounded-xl mb-4">
-                  <div className="aspect-square bg-secondary flex items-center justify-center">
-                    <span className="text-6xl font-black text-muted-foreground/10">
-                      {t.name.split(" ").map(n => n[0]).join("")}
-                    </span>
+                  <div className="aspect-square bg-secondary overflow-hidden">
+                    <img
+                      src={t.image}
+                      alt={t.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                     <div className="flex gap-3">
@@ -82,10 +126,12 @@ const Trainers = () => {
               <button onClick={() => setSelected(null)} className="absolute top-4 right-4 text-muted-foreground hover:text-foreground">
                 <X size={20} />
               </button>
-              <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-6 mx-auto">
-                <span className="text-2xl font-black text-muted-foreground/30">
-                  {trainers[selected].name.split(" ").map(n => n[0]).join("")}
-                </span>
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-6 mx-auto glow-border">
+                <img
+                  src={trainers[selected].image}
+                  alt={trainers[selected].name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-center mb-1">{trainers[selected].name}</h3>
               <p className="text-primary text-center text-sm font-medium mb-4">{trainers[selected].role}</p>
