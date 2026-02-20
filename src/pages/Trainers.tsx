@@ -12,7 +12,7 @@ const trainers = [
     experience: "12 years",
     speciality: "Powerlifting, Olympic Lifting",
     bio: "Former national powerlifting champion with a passion for transforming beginners into competitors.",
-    image: "https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Meera Kapoor",
@@ -28,7 +28,7 @@ const trainers = [
     experience: "10 years",
     speciality: "CrossFit, HIIT",
     bio: "Level 3 CrossFit certified coach who has trained multiple regional competitors.",
-    image: "https://images.unsplash.com/photo-1534367507873-ee2f79ec1896?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1517963879466-e825c2fe39cc?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Neha Gupta",
@@ -44,7 +44,7 @@ const trainers = [
     experience: "9 years",
     speciality: "Boxing, Kickboxing",
     bio: "Former amateur boxing champion bringing combat sports training to fitness enthusiasts.",
-    image: "https://images.unsplash.com/photo-1549476464-37392f717551?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Kavya Sharma",
