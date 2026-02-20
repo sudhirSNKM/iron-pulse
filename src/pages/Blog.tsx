@@ -17,7 +17,7 @@ const posts = [
   { title: "5 Essential Exercises for Building Core Strength", date: "Feb 10, 2025", author: "Meera Kapoor", category: "Workouts", image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop" },
   { title: "Nutrition Myths Debunked: What Actually Works", date: "Feb 5, 2025", author: "Neha Gupta", category: "Nutrition", image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" },
   { title: "Recovery: Why Rest Days Are Non-Negotiable", date: "Jan 28, 2025", author: "Arjun Das", category: "Recovery", image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" },
-  { title: "How to Set and Achieve Your Fitness Goals in 2025", date: "Jan 20, 2025", author: "Kavya Sharma", category: "Motivation", image: "https://images.unsplash.com/photo-1552674605-46d53b2112d7?q=80&w=800&auto=format&fit=crop" },
+  { title: "How to Set and Achieve Your Fitness Goals in 2025", date: "Jan 20, 2025", author: "Kavya Sharma", category: "Motivation", image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=800&auto=format&fit=crop" },
   { title: "The Benefits of Morning vs Evening Workouts", date: "Jan 15, 2025", author: "Rohan Mehta", category: "Lifestyle", image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800&auto=format&fit=crop" },
   { title: "Supplements Guide: What You Actually Need", date: "Jan 10, 2025", author: "Neha Gupta", category: "Nutrition", image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?q=80&w=800&auto=format&fit=crop" },
 ];

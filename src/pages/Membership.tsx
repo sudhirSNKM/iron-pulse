@@ -35,8 +35,12 @@ const Membership = () => {
 
   return (
     <PageTransition>
-      <section className="pt-32 section-padding">
-        <div className="container-custom">
+      <section className="pt-32 section-padding relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" alt="Background" className="w-full h-full object-cover opacity-5" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+        </div>
+        <div className="container-custom relative z-10">
           <SectionHeading
             subtitle="Membership"
             title="Choose Your Plan"
@@ -68,11 +72,10 @@ const Membership = () => {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
-                className={`rounded-2xl p-8 relative transition-all duration-500 hover:-translate-y-2 ${
-                  plan.popular
+                className={`rounded-2xl p-8 relative transition-all duration-500 hover:-translate-y-2 ${plan.popular
                     ? "glow-border-intense glass-card"
                     : "glass-card hover:glow-border"
-                }`}
+                  }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -95,11 +98,10 @@ const Membership = () => {
                   ))}
                 </ul>
                 <button
-                  className={`w-full py-3 rounded-lg font-bold uppercase tracking-wider text-sm transition-all duration-300 ${
-                    plan.popular
+                  className={`w-full py-3 rounded-lg font-bold uppercase tracking-wider text-sm transition-all duration-300 ${plan.popular
                       ? "bg-gradient-primary text-primary-foreground hover-glow hover:scale-105"
                       : "border border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                  }`}
+                    }`}
                 >
                   Get Started
                 </button>

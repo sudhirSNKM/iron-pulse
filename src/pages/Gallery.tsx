@@ -8,18 +8,18 @@ import { X } from "lucide-react";
 const categories = ["All", "Training", "Equipment", "Events", "Community"];
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop", category: "Training", label: "Strength Session" },
-  { src: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=800&auto=format&fit=crop", category: "Equipment", label: "Premium Equipment" },
-  { src: "https://images.unsplash.com/photo-1517931160458-2f69b2539958?q=80&w=800&auto=format&fit=crop", category: "Events", label: "Competition Day" },
+  { src: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop", category: "Training", label: "Strength Session" },
+  { src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop", category: "Equipment", label: "Premium Equipment" },
+  { src: "https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=800&auto=format&fit=crop", category: "Events", label: "Competition Day" },
   { src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800&auto=format&fit=crop", category: "Community", label: "Team Spirit" },
   { src: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop", category: "Training", label: "CrossFit WOD" },
   { src: "https://images.unsplash.com/photo-1590487988256-9ed24133863e?q=80&w=800&auto=format&fit=crop", category: "Equipment", label: "Free Weights Zone" },
   { src: "https://images.unsplash.com/photo-1574680096141-9c32f278d50f?q=80&w=800&auto=format&fit=crop", category: "Events", label: "Member Meetup" },
   { src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop", category: "Community", label: "Group Energy" },
   { src: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop", category: "Training", label: "Personal Training" },
-  { src: "https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=800&auto=format&fit=crop", category: "Equipment", label: "Cardio Floor" },
-  { src: "https://images.unsplash.com/photo-1561214078-f3247647fc5e?q=80&w=800&auto=format&fit=crop", category: "Events", label: "Annual Awards" },
-  { src: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=800&auto=format&fit=crop", category: "Community", label: "Success Stories" },
+  { src: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=800&auto=format&fit=crop", category: "Equipment", label: "Cardio Floor" },
+  { src: "https://images.unsplash.com/photo-1550345332-09e24f619717?q=80&w=800&auto=format&fit=crop", category: "Events", label: "Annual Awards" },
+  { src: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop", category: "Community", label: "Success Stories" },
 ];
 
 const Gallery = () => {
