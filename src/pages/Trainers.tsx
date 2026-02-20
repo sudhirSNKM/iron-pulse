@@ -28,7 +28,7 @@ const trainers = [
     experience: "10 years",
     speciality: "CrossFit, HIIT",
     bio: "Level 3 CrossFit certified coach who has trained multiple regional competitors.",
-    image: "https://images.unsplash.com/photo-1517963879466-e825c2fe39cc?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Neha Gupta",
