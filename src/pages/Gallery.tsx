@@ -64,7 +64,7 @@ const Gallery = () => {
                   onClick={() => setLightbox(i)}
                   className="break-inside-avoid cursor-pointer group relative overflow-hidden rounded-xl"
                 >
-                  <img src={img.src} alt={img.label} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img src={img.src} alt={img.label} loading="lazy" className="w-full h-auto block object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-background/20 group-hover:bg-background/40 transition-colors duration-300" />
                   <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-center">
